@@ -20,6 +20,56 @@
     </span>
     {% endif %}
 </div>
+<div class="card" style="margin: 20px 0px;">
+  <div class="card-body">
+    <h3>Elements</h3>
+    <p>Elements 主要用來檢視與調整 DOM 元素以及 Styles CSS 屬性。</p>
+    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*uYl6d1efnFUX-br6WiREJA.png" alt=""width='50%'>
+    <h4>DOM 元素相關</h4>
+    <ul>
+      <li>編輯 DOM 元素</li>
+      <p>點選元素兩下，可快速編輯元素內容、屬性<br>
+        點選元素→右鍵→Edit as HTML，可如同在編輯器中編輯 HTML 一般的編輯 DOM 元素</p>
+      
+      <li>快速收合 DOM 結構</li>
+      <p>點選元素→右鍵→ Expand recursively (展開全部子元素)
+        點選元素→右鍵→ Collapse children (收合至第一層子元素)</p>
+      <img src="https://miro.medium.com/v2/resize:fit:1100/1*mqcNu54fsU4C_iedUjZZgw.gif" alt="" width="50%">
+      <li>取得 DOM 元素</li>
+      <p>方法一：在 Elements 選取元素，接著在 Console 輸入 $0，即可獲得該元素。亦可獲得 $1、$2..，代表的是上一次選取的元素、上上一次選取的元素..，以此類推。</p>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/1*frbHwJCG2nOSXOEizBo1_g.gif" alt="" width="50%">
+      <p>方法二：點選元素→右鍵→Copy→Copy JS path，接著在 Console 貼上即可獲取該元素。</p>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/1*qHP5kzBKBB3IO933LLKmOg.gif" alt="" width="50%">
+      <p>方法三：存下來當作全域變數，DevTools 預設變數名稱為 temp 加上數字，第一個為 temp1，第二個為 temp2.. 以此類推。</p>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/1*u6JIrwVFIgT6FDFSr0QB2g.gif" alt="" width="50%">
+      <p>畫面位移至被選取的元素位置<br>
+        點選元素→右鍵→ Scroll into view</p>
+    </ul>
+    <h4>Styles 相關</h4>
+    <ul>
+      <li>編輯 CSS</li>
+      <ol>
+        <li>點選欲編輯的 DOM 元素後，於 Styles 中的 element.style 輸入 CSS 屬性，可以直接看到編輯結果</li>
+        <li>點選 :hov ，可選取不同狀態</li>
+        <li>點選 + 號，可進行偽類、偽元素的編輯</li>
+      </ol>
+      <li>查看所有屬性</li>
+      <p>box model 用以查看元素大小的組成要素(margin、border、padding、content)，這個盒子對於剛學習 CSS 的人來說，非常有幫助哦！<br>
+        box model 下方的列出各屬性值，也可點選 show all 查看所有包含繼承的屬性。</p>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*98L5qskauT5AJVjKkfEppA.png" alt="" width="50%">
+      <li>查找屬性設定來源</li>
+      <p>設定 CSS 屬性時，有時因層級設定等關係，畫面沒有如預期的顯示出我們想要設定的樣式，這時很需要知道目前的屬性值來源。以找出 color 屬性設定來源為例，有兩種方式。</p>
+      <ol>
+        <li>方法一：在 Filter 欄位中查找特定屬性。</li>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/1*hTKnK6YWN4ICwixJUF8cHQ.gif" alt="" width="50%">
+        <li>方法二：查找屬性值列表，點選 color →來源箭頭，導向來源</li>
+        <img src="https://miro.medium.com/v2/resize:fit:1100/1*pgFIYrKjLpt4M2BvDKU8Vw.gif" alt="" width="50%">
+      </ol>
+    </ul>
+  <p>reference : <a href="https://developer.chrome.com/docs/devtools/dom/">Get started with viewing and changing the DOM</a>、<a href="https://developer.chrome.com/docs/devtools/dom/properties/">View the properties of DOM objects</a>、<a href="https://reurl.cc/z6o94k">開發必備，摸索不完的 Chrome DevTools 小技巧之 Element 篇</a></p>
+  </div>
+</div>
+
 </div>
 <div class="card" style="margin: 20px 0px;">
   <div class="card-body">
